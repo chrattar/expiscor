@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>expiscor - Preventing Unrealistic Price Declines in Sales and Monte Carlo Simulations</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+<body>
+    <header class="header">
+        <div class="profile-section">
+            <div class="profile-info">
+                <h4 class="header-title">EXPISCOR - (verb, present infinitive expiscārī, perfect active expiscātus sum). 1. to fish or angle for information 2. to find out</h4>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="http://127.0.0.1:5000/">Home</a></li>
+                        <li><a href="http://127.0.0.1:5000/sci">Science Stuff</a></li>
+                        <li><a href="http://127.0.0.1:5000/tb">Tech & Business</a></li>
+                        <li><a href="http://127.0.0.1:5000/projects">Projects</a></li>
+                        <li><a href="http://127.0.0.1:5000/reference">Reference</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <article class="blog-post">
+            <div class="post-header">
+                <h1>Pricing Challenges with Sales People</h1>
+                <div class="post-meta">
+                </div>
+            </div>
+            
+            <div class="post-content">
+
+                <p>Sales teams often struggle with effectively categorizing their customers, leading to inconsistencies in pricing strategies. One common issue occurs when a sales rep compares accounts within their own region rather than considering the broader market.</p>
+                <p>For example, imagine <strong>Customer ABC</strong> in a smaller market, spending <strong>$1 million annually</strong>. In this region, ABC is considered a <strong>large account</strong>, and the sales rep offers them the <strong>best possible pricing</strong>. Meanwhile, <strong>Customer XYZ</strong>, located in a <strong>larger, more competitive region</strong>, also spends <strong>$1 million annually</strong>, but because they rank as a <strong>mid-sized customer</strong> in that market, they receive <strong>higher pricing—typically 4-8% more</strong> than Customer ABC.</p>
+                <p>The problem arises when:</p>
+                <ul>
+                    <li>Customer ABC enters the larger market and shares their pricing, introducing an artificially deflated price into the broader market.</li>
+                    <li>A larger customer moves into the smaller market, prompting the local rep to either match ABC’s lower pricing or undercut it further, driving prices down even more.</li>
+                </ul>
+                <p>This dynamic leads to an <strong>unintended market-wide price compression</strong>, ultimately eroding margins and creating instability in pricing structures.</p>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img src="{{ url_for('static', filename='images/bus-plots/0002-price-compression.png') }}" 
+                         alt="Pricing Spread Profitability Differential" 
+                         style="width: 75%; height: auto;">
+                </div>
+                
+            </div>
+        </article>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Christopher Attar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
